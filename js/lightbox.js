@@ -41,5 +41,12 @@ $(function(){
 			//console.log($(this).attr('src'));
 			$('.message .body img').attr('src' , imgSrc).fadeIn();
 		});
-	})
+	});
+
+	$('.selfImg').click(function(){
+		//$("<a>").attr("href", src).attr("download", "filename").appendTo("body").click().remove();
+		var a = $("<a></a>").attr("href", 'img').attr("download", 'CV_A4.jpg').appendTo("body");
+	    a[0].click();
+	    a.remove();
+	});
 })
